@@ -1,0 +1,45 @@
+YOLOX/yolox/data/datasets/voc.py  line 61 
+
+cur_pt = int(float(bbox.find(pt).text)) - 1
+
+**********************************************************************************************
+
+YOLOX/exps/example/yolox_voc/yolox_voc_s.py 
+
+self.max_epoch = 1000
+
+**********************************************************************************************
+
+YOLOX/yolox/evaluators/voc_evaluator.py  line 83 - line 167
+
+83--- n_samples = max(len(self.dataloader) - 1, 1)
+
+167--- a_infer_time = 1000 * inference_time / max(1, n_samples * self.dataloader.batch_size)
+
+
+**********************************************************************************************
+
+YOLOX/yolox/evaluators/voc_eval.py
+
+def parse_rec(filename):
+    """ Parse a PASCAL VOC xml file """
+    tree = ET.parse(filename)
+    objects = []
+    for obj in tree.findall("object"):
+        obj_struct = {}
+        obj_struct["name"] = obj.find("name").text
+        #obj_struct["pose"] = obj.find("pose").text
+        obj_struct["truncated"] = int(obj.find("truncated").text)
+        obj_struct["difficult"] = int(obj.find("difficult").text)
+        bbox = obj.find("bndbox")
+        obj_struct["bbox"] = [
+            int(float(bbox.find("xmin").text)),
+            int(float(bbox.find("ymin").text)),
+            int(float(bbox.find("xmax").text)),
+            int(float(bbox.find("ymax").text)),
+        ]
+        objects.append(obj_struct)
+
+    return objects
+
+**********************************************************************************************

@@ -1,3 +1,5 @@
+Colab Notebook Türkçe : https://colab.research.google.com/drive/1frimx1PhJ66bdqc6bnjgx3Z2nTlrzZtn?authuser=5#scrollTo=qhXs3OvbJm8Q
+
 <div align="center"><img src="assets/logo.png" width="350"></div>
 <img src="assets/demo.png" >
 

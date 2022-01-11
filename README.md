@@ -1,5 +1,9 @@
 Colab Notebook Türkçe : https://drive.google.com/file/d/1frimx1PhJ66bdqc6bnjgx3Z2nTlrzZtn/view?usp=sharing
 
+
+
+
+
 <div align="center"><img src="assets/logo.png" width="350"></div>
 <img src="assets/demo.png" >
 

@@ -5,7 +5,9 @@ TensorRT - Optmizasyon için Kodlar
 torch2trt kurulumu :
 
 git clone https://github.com/NVIDIA-AI-IOT/torch2trt
+
 cd torch2trt
+
 sudo python setup.py install
 
 ******************************************************************************************************************************************************************

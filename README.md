@@ -13,6 +13,7 @@ python3 tools/trt.py -f /home/moveonboxer81701/Desktop/YOLOX/exps/example/yolox_
 İnference : 
 
 Standart Gpu =python3 tools/demo.py video -f exps/example/yolox_voc/yolox_voc_s.py -c latest_ckpt.pth.tar --path video.mp4 --device gpu --tsize 640 --legacy --conf 0.60
+
 TensorRT Gpu = python3 tools/demo.py video -f exps/example/yolox_voc/yolox_voc_s.py -c model.engine --path video.mp4 --device gpu --tsize 640 --legacy --conf 0.60 --trt
 
 <div align="center"><img src="assets/logo.png" width="350"></div>

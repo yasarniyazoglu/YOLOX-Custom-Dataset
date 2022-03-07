@@ -3,7 +3,12 @@ Colab Notebook Türkçe : https://drive.google.com/file/d/1frimx1PhJ66bdqc6bnjgx
 TensorRT - Optmizasyon için Kodlar
 
 torch2trt kurulumu :
-*********************************************************************************************************************************************************************************
+
+git clone https://github.com/NVIDIA-AI-IOT/torch2trt
+cd torch2trt
+sudo python setup.py install
+
+******************************************************************************************************************************************************************
 
 Pytorch ve Torchvision (gpu) Kurulumu :
 
@@ -47,7 +52,8 @@ $ rm torchvision-0.11.0a0+fa347eb-cp36-cp36m-linux_aarch64.whl
 Convert Trt Engine:
 
 python3 tools/trt.py -f /home/moveonboxer81701/Desktop/YOLOX/exps/example/yolox_voc/yolox_voc_s.py -c /home/moveonboxer81701/Desktop/YOLOX/latest_ckpt.pth.tar
-*********************************************************************************************************************************************************************************
+
+******************************************************************************************************************************************************************
 İnference : 
 
 Standart Gpu =python3 tools/demo.py video -f exps/example/yolox_voc/yolox_voc_s.py -c latest_ckpt.pth.tar --path video.mp4 --device gpu --tsize 640 --legacy --conf 0.60

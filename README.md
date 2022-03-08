@@ -37,6 +37,7 @@ $ rm torch-1.10.0a0+git36449ea-cp36-cp36m-linux_aarch64.whl
 
 Torchvision
 Used with PyTorch 1.10.0
+
 $ sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev
 
 $ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev
